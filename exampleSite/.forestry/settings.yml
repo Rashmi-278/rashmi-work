@@ -5,6 +5,18 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
+  label: config header
+- type: document
+  path: ''
+  label: config document
+  match: "**/*"
+  read_only: false
+- type: directory
+  path: ''
+  label: Config directory
+  create: all
+  match: "**/*"
+- type: heading
   label: Blog Post
 - type: directory
   path: exampleSite/content/english/blog
