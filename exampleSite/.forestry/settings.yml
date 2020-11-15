@@ -9,12 +9,10 @@ sections:
 - type: document
   path: ''
   label: config document
-  match: "**/*"
-  read_only: false
 - type: directory
   path: ''
   label: Config directory
-  create: all
+  create: none
   match: "**/*"
 - type: heading
   label: Blog Post
@@ -72,7 +70,7 @@ sections:
 upload_dir: exampleSite/static/images
 public_path: "/images"
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_env:
